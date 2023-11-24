@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Feladat</title>
+</head>
+<body>
+  <h1>Új áru:</h1>
+  <form method="post" id="form">
+    <label>
+      Serial number:
+      <input type="text" name="serialNumber" id="serialNumber">
+    </label>
+    <label>
+      Condition:
+      <input type="text" name="condition" id="condition">
+    </label>
+    <label>
+      Name:
+      <input type="text" name="name" id="name">
+    </label>
+  </label>
+  <% if (errors) {
+    errors.forEach((msg) => { %>
+    <p class="errorMessage"> <%= msg%> </p>  
+    <%});
+}%>
+  <input type="submit" value="Felvétel">
+  </form>
+</body>
+</html>
