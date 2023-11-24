@@ -6,10 +6,10 @@ function init(){
 function loadPreviousInput(){
   
 }
-function previousInput(){
+/*function previousInput(){
   const serialNumber = document.getElementById('serialNumber').value;
   const name = document.getElementById('name').value;
   const condition = document.getElementById('condition').value;
   
-}
+}*/
 document.addEventListener('DOMContentLoaded', init);
